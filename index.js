@@ -1,2 +1,2 @@
-const ConsumerProductApi = require("./dist/index.js");
-module.exports = ConsumerProductApi;
+import ConsumerProductApi from "./dist/index.js";
+export default ConsumerProductApi;
