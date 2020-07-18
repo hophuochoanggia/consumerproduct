@@ -22,10 +22,7 @@ project.lock.json
 appsettings.json
 
 node_modules
-dist
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-dist/
