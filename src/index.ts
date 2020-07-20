@@ -33,7 +33,15 @@ export class ConsumerProductApi {
   //   return this.client.get("/v1/feedback");
   // };
 
-  createFeedback = (formData) => {
+  createFeedback = ({ payload, ...photos }) => {
+    const formData = new FormData();
+    Object.keys(payload).map((key) => {
+      formData.append(key, payload[key]);
+    });
+    photos.map((photo) => {
+      formData.append("photos", photo);
+    });
+
     return this.client.post("/v1/feedback", formData, {
       headers: { "Content-Type": "multipart/form-data" },
     });
