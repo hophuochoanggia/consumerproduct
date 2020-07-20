@@ -7,10 +7,12 @@ export class ConsumerProductApi {
     authorization,
     product_master_account,
     baseURL,
+    timeout = 30000,
   }: {
     authorization: string;
     product_master_account: number;
     baseURL: string;
+    timeout: number;
   }) {
     if (!authorization) {
       throw "consumerproductapi_unauthorized";
@@ -20,7 +22,7 @@ export class ConsumerProductApi {
     }
     this.client = axios.create({
       baseURL: `${baseURL}/api`,
-      timeout: 15000,
+      timeout,
       maxRedirects: 5,
       headers: {
         "Content-Type": "application/json",

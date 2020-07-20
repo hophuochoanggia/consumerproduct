@@ -15,7 +15,7 @@ const axios_1 = require("axios");
 class ConsumerProductApi {
     constructor({ authorization, product_master_account, baseURL, }) {
         this.createFeedback = (_a) => {
-            var { payload } = _a, photos = __rest(_a, ["payload"]);
+            var { photos } = _a, payload = __rest(_a, ["photos"]);
             const formData = new FormData();
             Object.keys(payload).map((key) => {
                 formData.append(key, payload[key]);
