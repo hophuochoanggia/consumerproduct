@@ -1,4 +1,5 @@
 import axios, { AxiosInstance } from "axios";
+import { IFeedback } from "./interface";
 
 export class ConsumerProductApi {
   private client: AxiosInstance;
@@ -35,12 +36,12 @@ export class ConsumerProductApi {
   //   return this.client.get("/v1/feedback");
   // };
 
-  createFeedback = ({ photos, ...payload }) => {
+  createFeedback = ({ photos, ...payload }: IFeedback) => {
     const formData = new FormData();
     Object.keys(payload).map((key) => {
       formData.append(key, payload[key]);
     });
-    photos.map((photo) => {
+    photos.map((photo: any) => {
       formData.append("photos", photo);
     });
 

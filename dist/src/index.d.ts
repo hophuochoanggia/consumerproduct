@@ -1,12 +1,11 @@
+import { IFeedback } from "./interface";
 export declare class ConsumerProductApi {
     private client;
-    constructor({ authorization, product_master_account, baseURL, }: {
+    constructor({ authorization, product_master_account, baseURL, timeout, }: {
         authorization: string;
         product_master_account: number;
         baseURL: string;
+        timeout: number;
     });
-    createFeedback: ({ photos, ...payload }: {
-        [x: string]: any;
-        photos: any;
-    }) => Promise<import("axios").AxiosResponse<any>>;
+    createFeedback: ({ photos, ...payload }: IFeedback) => Promise<import("axios").AxiosResponse<any>>;
 }

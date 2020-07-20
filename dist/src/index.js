@@ -13,7 +13,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const axios_1 = require("axios");
 class ConsumerProductApi {
-    constructor({ authorization, product_master_account, baseURL, }) {
+    constructor({ authorization, product_master_account, baseURL, timeout = 30000, }) {
         this.createFeedback = (_a) => {
             var { photos } = _a, payload = __rest(_a, ["photos"]);
             const formData = new FormData();
@@ -35,7 +35,7 @@ class ConsumerProductApi {
         }
         this.client = axios_1.default.create({
             baseURL: `${baseURL}/api`,
-            timeout: 15000,
+            timeout,
             maxRedirects: 5,
             headers: {
                 "Content-Type": "application/json",

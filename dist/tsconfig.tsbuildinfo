@@ -133,9 +133,13 @@
         "version": "e7df7eb51c5090db4bdcdbf9efe053530dff0e33796f40b08b1a3be6c3a351d0",
         "signature": "e7df7eb51c5090db4bdcdbf9efe053530dff0e33796f40b08b1a3be6c3a351d0"
       },
+      "../src/interface.ts": {
+        "version": "36fea9cdeb35fa593ba204db9643658fd94e5782306966359eb5c86212d16214",
+        "signature": "7fcc63a408d72388d5be3f8b23310d678adf1f5f77243dab607cc3f70a9fb326"
+      },
       "../src/index.ts": {
-        "version": "6f756e9ff3010af963fb0fd8b3a7d3733ddd57fd47cb59177735d251e78bd29d",
-        "signature": "75bef16ba3372b0a3196e7ee2ece272770d9f729d7a8d8222db450cf86efdfae"
+        "version": "a49d40607073b727d868fc8f295efc0845b8133c8b08f5fca61470ad0765e740",
+        "signature": "6f52032ac2f8dc4af30761883dd439d15836270e4303a3b6f601a5cbfe7b08f6"
       },
       "../test/util.ts": {
         "version": "c84e77b3e2cc4cecdc82b6168e85df8af2a4bdd8d5818911eb888b29cc997fa3",
@@ -783,8 +787,18 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/interface.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/process.d.ts",
+        "../node_modules/@types/node/ts3.2/process.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/index.ts": [
         "../node_modules/axios/index.d.ts",
+        "../src/interface.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
@@ -1961,7 +1975,8 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/index.ts": [
-        "../node_modules/axios/index.d.ts"
+        "../node_modules/axios/index.d.ts",
+        "../src/interface.ts"
       ],
       "../node_modules/@babel/types/lib/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -2921,6 +2936,7 @@
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
+      "../src/interface.ts",
       "../src/index.ts"
     ]
   },
