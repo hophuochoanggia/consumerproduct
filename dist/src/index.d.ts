@@ -5,5 +5,8 @@ export declare class ConsumerProductApi {
         product_master_account: number;
         baseURL: string;
     });
-    createFeedback: (formData: any) => Promise<import("axios").AxiosResponse<any>>;
+    createFeedback: ({ payload, ...photos }: {
+        [x: string]: any;
+        payload: any;
+    }) => Promise<import("axios").AxiosResponse<any>>;
 }

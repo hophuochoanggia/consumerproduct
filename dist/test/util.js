@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.product_master_account = exports.CRM_TOKEN = exports.baseURL = void 0;
 exports.baseURL = "http://localhost:7071";
 exports.CRM_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJnaWEuaG80QGRmby5nbG9iYWwiLCJJZCI6MzMxLCJDdXN0b21lcklkIjo1MDcyNTI5LCJQcm9kdWN0TWFzdGVyQWNjb3VudElkIjo1LCJFbWFpbCI6ImdpYS5obzRAZGZvLmdsb2JhbCIsIkFwcEtleSI6IjhENEI3MUM5LTg5QTYtNDIwQi05ODI3LTM3QzQ1Qzc0Rjg2RiIsImp0aSI6IjI5M2FhNjU5LTRmZDYtNDk4MS04NWZjLTc5NTYwZWE5MjQ3NSIsImlzcyI6IndlYnNhbGVzLWFwaSIsImlhdCI6MTU5NDgxNTc2NiwibmJmIjoxNTk0ODE1NzY2LCJleHAiOjE1OTk5OTk3NjZ9.NZXE5ZhPEmklp1J1xnH7LmwENwI3csawIkg_9R6odOM";
 exports.product_master_account = 5;

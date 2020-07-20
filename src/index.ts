@@ -33,7 +33,7 @@ export class ConsumerProductApi {
   //   return this.client.get("/v1/feedback");
   // };
 
-  createFeedback = ({ payload, ...photos }) => {
+  createFeedback = ({ photos, ...payload }) => {
     const formData = new FormData();
     Object.keys(payload).map((key) => {
       formData.append(key, payload[key]);
